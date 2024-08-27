@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Sign-Up</title>
+    <link rel="icon" type="image/png" href="./images/User-avatar.svg.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <main>
+    <section id="Sinup">
+    <div class="container">
+        <div class="form-box">
+            <h1>Smart Login System</h1>
+            <div id="registrationForm" class="text-start">
+                <div class="input-icon" id="vali">
+                <input class="form-control my-3 " type="text" id="username" placeholder="Username" >
+                <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-icon">
+                <input class="form-control my-3 " type="email" id="email" placeholder="Email" >
+                <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-icon">
+                <input class="form-control my-3 " type="password" id="password" placeholder="Password" required>
+                <i class="fa-solid fa-key"></i>
+                </div>
+                <div class="input-icon">
+                    <input class="form-control my-3 " type="number" id="number" placeholder="Phone Number" required>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                <div class="input-icon">
+                <input  class="form-control my-3 " type="file" id="avatar-input" accept="image/*">
+                <i class="fa-solid fa-file-image"></i>
+                </div>
+            
+            </div>
+                <button type="submit" class="btn btn-outline my-3 "id="SignUp">SignUp</button>
+                <p id="registrationError"></p>
+            </div>
+            <p id="Message">Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+       </section>
+<section id="LogInY"  style="display:none;">
+    <div class="container">
+        <div class="form-group st">
+            <h1>Smart Login System</h1>
+            <div id="loginForm" class="text-start">
+                <div class="input-icon">
+                    <input type="email" placeholder="Email" class="form-control my-4 " id="loginEmail">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-icon">
+                    <input type="password" placeholder="password" class="form-control my-4 " id="loginPassword">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+           
+            </div>
+            <button type="submit" class="btn btn-outline my-2" id="logInn">Login</button>
+            <p id="loginError"></p>
+   </div>
+            <p id="noAccountMessage" > Don't have an account? <a href="index.html">SignUp here</a></p>
+     
+    </div>
+</section>
+<section id="home"  style="display:none;">
+    <div class="container">
+        <div class="home-box">
+            <h1> Welcome <span id="userNameDisplay" class="fs-2"></span> <i class="fa-solid fa-heart fs-2"></i></h1>
+            <img id="welcomeImage" src="" alt="Profile Image" >
+        </div>
+        <button id="logoutButton" class="btn btn-outline">Logout</button>
+    </div>
+</section>
+    </main>
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Registration JS -->
+    <script src="./js/registration.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/home.js"></script>
+    
+</body>
+</html>
